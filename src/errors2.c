@@ -6,7 +6,7 @@
 /*   By: joacaeta <joacaeta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 23:08:01 by joacaeta          #+#    #+#             */
-/*   Updated: 2022/10/23 01:56:46 by joacaeta         ###   ########.fr       */
+/*   Updated: 2022/10/27 02:24:15 by joacaeta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ void	error_message(char	*message)
 	ft_putstr_fd("Error\n", 1);
 	ft_putstr_fd(message, 1);
 	ft_putstr_fd("\n", 1);
+	no_leaks_map();
 	exit(0);
 }
 

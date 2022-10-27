@@ -6,7 +6,7 @@
 /*   By: joacaeta <joacaeta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 17:23:11 by joacaeta          #+#    #+#             */
-/*   Updated: 2022/10/23 04:18:47 by joacaeta         ###   ########.fr       */
+/*   Updated: 2022/10/27 02:21:06 by joacaeta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,12 @@ t_game	*game(void)
 int	main(int argc, char **argv)
 {
 	if (argc != 2)
-		error_message("Number of args");
+	{
+		ft_putstr_fd("Error\n", 1);
+		ft_putstr_fd("Wrong Number of args", 1);
+		ft_putstr_fd("\n", 1);
+		exit(0);
+	}
 	game()->map = get_map(argv[1]);
 	map_errors();
 	game()->mlx = mlx_init();

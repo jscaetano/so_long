@@ -6,7 +6,7 @@
 /*   By: joacaeta <joacaeta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 17:17:35 by joacaeta          #+#    #+#             */
-/*   Updated: 2022/10/23 04:24:01 by joacaeta         ###   ########.fr       */
+/*   Updated: 2022/10/27 02:24:19 by joacaeta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,6 +119,7 @@ void		animloop2(int x, int y);
 
 //leaks
 void		no_leaks(void);
+void		no_leaks_map(void);
 
 //main
 void		render_image(int x, int y, char type);
